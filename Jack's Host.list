@@ -1,1 +1,18 @@
-1
+
+# > jackfzg
+DOMAIN-SUFFIX,jackfzg.top,direct
+
+# > pikpak
+DOMAIN-KEYWORD,pikpak,proxy
+
+# > replit
+DOMAIN-SUFFIX,fzg262523.repl.co,direct
+
+# > yfamily
+DOMAIN-SUFFIX,vercel.app,proxy
+
+# > 莫高雷
+DOMAIN-SUFFIX,mgl.gay,direct
+
+# > peach IP
+IP-CIDR,168.138.161.143/32,direct
