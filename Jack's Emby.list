@@ -28,7 +28,7 @@ DOMAIN-SUFFIX,texon.fans
 
 # > 剧狗
 DOMAIN-SUFFIX,ju.dog
-IP-CIDR,202.61.255.248/32,no-resolve
+# IP-CIDR,202.61.255.248/32,no-resolve
 
 # > TreeDiagram
 DOMAIN-SUFFIX,123456.al
