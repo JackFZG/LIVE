@@ -181,7 +181,7 @@ DOMAIN,free.emby.eu.org
 
 # > peach
 DOMAIN-SUFFIX,embymv.tk
-IP-CIDR,168.138.161.143/32,no-resolve
+# IP-CIDR,168.138.161.143/32,no-resolve
 
 # > infinityfly
 DOMAIN-SUFFIX,infinityfly.top
