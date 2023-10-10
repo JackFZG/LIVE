@@ -15,4 +15,4 @@ DOMAIN-SUFFIX,vercel.app,proxy
 DOMAIN-SUFFIX,mgl.gay,direct
 
 # > peach IP
-IP-CIDR,168.138.161.143/32,direct
+IP-CIDR,168.138.161.143/32,direct,no-resolve
