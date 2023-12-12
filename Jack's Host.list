@@ -19,3 +19,6 @@ IP-CIDR,168.138.161.143/32,direct,no-resolve
 
 # > EMBY 酒吧
 DOMAIN-SUFFIX,the98.ltd,direct
+
+# > 叔服
+DOMAIN-SUFFIX,mcjoker.xyz,direct
