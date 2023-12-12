@@ -2,12 +2,6 @@
 # > Singularity
 DOMAIN-SUFFIX,singularity.deja-vu.beauty
 
-# > 品云
-DOMAIN-SUFFIX,embyplus.club
-
-# > Netcup
-DOMAIN-SUFFIX,404.sb
-
 # > 佛系
 DOMAIN-SUFFIX,4545.cf
 
@@ -19,58 +13,12 @@ IP-CIDR,212.90.120.164/32,no-resolve
 DOMAIN-SUFFIX,xmsl.org
 DOMAIN-SUFFIX,loseremby.org
 
-# > llon plex
-DOMAIN-SUFFIX,plex.direct
-DOMAIN,plex.llon.net
-
-# > texon
-DOMAIN-SUFFIX,texon.fans
-
 # > 剧狗
 DOMAIN-SUFFIX,ju.dog
 # IP-CIDR,202.61.255.248/32,no-resolve
 
 # > TreeDiagram
 DOMAIN-SUFFIX,123456.al
-
-# > emby-nexitally
-DOMAIN,emby.nexitally.com
-
-# > emby-paoche
-DOMAIN,emby.cjpc.cc
-
-# > emby-flowercloud
-DOMAIN,emby.flowercloud.yt
-
-# > emby-maying
-DOMAIN,emby.maying.club
-
-# > emby-mdss
-DOMAIN,emby.mdss.cloud
-
-# > emby-ytoo
-DOMAIN,emby.ytoo.li
-
-# > emby-w8ves
-DOMAIN,embyserver.ga
-
-# > emby-prpr
-DOMAIN,emby.prprcloud.com
-
-# > emby-nyancat
-DOMAIN,emby.nyancat.net
-
-# > emby-Plus
-DOMAIN,emby.plusmedia.site
-DOMAIN,emby-cf.plusmedia.site 
-DOMAIN,emby.xeton.dev
-DOMAIN,jellyfin.xeton.dev
-DOMAIN,movie.xeton.dev
-DOMAIN,servers.xeton.dev
-
-# > emby-Otaku
-DOMAIN,emby.otakudrive.life
-DOMAIN,emby2.otakudrive.life 
 
 # > emby-jmsooo
 DOMAIN,agahk1.jmsooo.com
@@ -84,32 +32,11 @@ DOMAIN,cf1.jmsooo.com
 # > pornemby
 DOMAIN,pornemby.club
 
-# > IMM
-DOMAIN,emby.immtel.com
-
 # > Odyssey
 DOMAIN,cf.odysseyplus.site
 DOMAIN,agahk.odysseyplus.site
 DOMAIN,agasg.odysseyplus.site
 DOMAIN,ru.odysseyplus.site
-
-# > Exflux
-DOMAIN,line.emby.men
-
-# > SoCloud
-DOMAIN,emby.run
-
-# > 普拉斯影业
-DOMAIN,emby.plusmedia.site
-DOMAIN,emby-sg.plusmedia.site
-DOMAIN,emby-cf.plusmedia.site
-DOMAIN,emby.xeton.dev
-DOMAIN,jellyfin.xeton.dev
-DOMAIN,movie.xeton.dev
-DOMAIN,servers.xeton.dev
-
-# > WaveCloud
-DOMAIN,embyserver.ga
 
 # > 卷毛鼠
 DOMAIN-SUFFIX,jmsooo.com
@@ -130,12 +57,6 @@ DOMAIN,azsgp.embyclub.com
 
 # > 卡戎
 DOMAIN,play.charontv.com
-
-# > 大白
-DOMAIN,emby.p-p.men
-
-# > aiyowei
-DOMAIN,emby.aiyowei.ml
 
 # > polo
 DOMAIN-SUFFIX,poloemby.xyz
@@ -192,3 +113,6 @@ DOMAIN-SUFFIX,reddust.link
 
 # > acemby
 DOMAIN-SUFFIX,zox.show
+
+# > 叔服
+DOMAIN-SUFFIX,mcjoker.xyz
