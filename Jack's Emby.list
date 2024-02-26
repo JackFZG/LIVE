@@ -20,15 +20,6 @@ DOMAIN-SUFFIX,ju.dog
 # > TreeDiagram
 DOMAIN-SUFFIX,123456.al
 
-# > emby-jmsooo
-DOMAIN,agahk1.jmsooo.com
-DOMAIN,agasg1.jmsooo.com
-DOMAIN,agajp1.jmsooo.com
-DOMAIN,aws.jmsooo.com
-DOMAIN,ntt1.jmsooo.com
-DOMAIN,hinet.jmsooo.com
-DOMAIN,cf1.jmsooo.com
-
 # > pornemby
 DOMAIN,pornemby.club
 
@@ -39,7 +30,7 @@ DOMAIN,agasg.odysseyplus.site
 DOMAIN,ru.odysseyplus.site
 
 # > 卷毛鼠
-# DOMAIN-SUFFIX,jmsooo.com
+DOMAIN-SUFFIX,jmsooo.com
 
 # > 终点站
 DOMAIN,emby.wtf
