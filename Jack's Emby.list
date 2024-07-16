@@ -5,9 +5,8 @@ DOMAIN-SUFFIX,singularity.deja-vu.beauty
 # > 野兽餐厅
 DOMAIN-SUFFIX,mius.uk
 
-# > 蓝海
-DOMAIN-SUFFIX,blueseacdn.com 
-IP-CIDR,212.90.120.164/32,no-resolve
+# > 叔服
+DOMAIN-SUFFIX,mcjoker.xyz
 
 #> 1111
 DOMAIN-SUFFIX,xmsl.org
