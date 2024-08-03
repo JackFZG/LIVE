@@ -6,23 +6,17 @@ DOMAIN-SUFFIX,jackfzg.top,direct
 DOMAIN-KEYWORD,pikpak,proxy
 
 # > replit
-DOMAIN-SUFFIX,fzg262523.repl.co,direct
+# DOMAIN-SUFFIX,fzg262523.repl.co,direct
 
 # > yfamily
 DOMAIN-SUFFIX,vercel.app,proxy
-
-# > 莫高雷
-DOMAIN-SUFFIX,mgl.gay,direct
 
 # > peach IP
 DOMAIN-SUFFIX,peachmv.me,direct
 IP-CIDR,168.138.161.143/32,direct,no-resolve
 
-# > EMBY 酒吧
-DOMAIN-SUFFIX,the98.ltd,direct
-
 # > 叔服
-DOMAIN-SUFFIX,mcjoker.xyz,direct
+# DOMAIN-SUFFIX,mcjoker.xyz,direct
 
 # > Cc
 # DOMAIN,cc.coemn.com,direct
