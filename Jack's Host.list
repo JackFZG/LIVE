@@ -1,6 +1,6 @@
 
 # > jackfzg
-DOMAIN-SUFFIX,jackfzg.top,direct
+DOMAIN-SUFFIX,jackfzg.top,proxy
 
 # > pikpak
 DOMAIN-KEYWORD,pikpak,proxy
@@ -12,15 +12,21 @@ DOMAIN-KEYWORD,pikpak,proxy
 DOMAIN-SUFFIX,vercel.app,proxy
 
 # > peach IP
-DOMAIN-SUFFIX,peachmv.me,direct
+# DOMAIN-SUFFIX,peachmv.me,direct
 IP-CIDR,168.138.161.143/32,direct,no-resolve
 
 # > 叔服
-# DOMAIN-SUFFIX,mcjoker.xyz,direct
+DOMAIN-SUFFIX,mcjoker.xyz,direct
 
 # > Cc
-# DOMAIN,cc.coemn.com,direct
+DOMAIN,cc.coemn.com,direct
+DOMAIN,cc.embycc.link,direct
+DOMAIN-SUFFIX,carryz.net,direct
 
 # > 卷毛鼠
-# DOMAIN-SUFFIX,jmsooo.com,direct
+DOMAIN-SUFFIX,jmsooo.com,日本节点
+
+# > IPTV
+DOMAIN-SUFFIX,4gtv.tv,台湾节点
+DOMAIN-SUFFIX,hinet.net,台湾节点
 
