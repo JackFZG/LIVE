@@ -30,3 +30,7 @@ DOMAIN-SUFFIX,jmsooo.com,日本节点
 DOMAIN-SUFFIX,4gtv.tv,台湾节点
 DOMAIN-SUFFIX,hinet.net,台湾节点
 
+# > heisi
+DOMAIN-SUFFIX,i109.com,proxy
+
+
