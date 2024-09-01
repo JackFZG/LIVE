@@ -25,7 +25,7 @@ DOMAIN-SUFFIX,carryz.net,direct
 
 # > 卷毛鼠
 # DOMAIN-SUFFIX,jmsooo.com,日本节点
-# DOMAIN-SUFFIX,jmsuper.com,日本节点
+DOMAIN-SUFFIX,jmsuper.com,日本节点
 
 # > IPTV
 DOMAIN-SUFFIX,4gtv.tv,台湾节点
