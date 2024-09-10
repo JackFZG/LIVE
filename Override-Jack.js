@@ -371,18 +371,18 @@ function main(config) {
 
   // 覆盖规则
   config["rules"] = [
-    "DOMAIN-KEYWORD,pikpak,手动切换"
-    "DOMAIN-SUFFIX,jackfzg.top,手动切换"
-    "DOMAIN-SUFFIX,vercel.app,手动切换"
-    "DOMAIN-SUFFIX,i109.com,手动切换"
-    "DOMAIN-SUFFIX,mcjoker.xyz,DIRECT"
-    "DOMAIN,cc.coemn.com,DIRECT"
-    "DOMAIN,cc.embycc.link,DIRECT"
-    "DOMAIN-SUFFIX,carryz.net,DIRECT"
-    "DOMAIN-SUFFIX,jmsooo.com,日本节点"
-    "DOMAIN-SUFFIX,4gtv.tv,台湾节点"
-    "DOMAIN-SUFFIX,hinet.net,台湾节点"
-    "IP-CIDR,168.138.161.143/32,DIRECT"
+    "DOMAIN-KEYWORD,pikpak,手动切换",
+    "DOMAIN-SUFFIX,jackfzg.top,手动切换",
+    "DOMAIN-SUFFIX,vercel.app,手动切换",
+    "DOMAIN-SUFFIX,i109.com,手动切换",
+    "DOMAIN-SUFFIX,mcjoker.xyz,DIRECT",
+    "DOMAIN,cc.coemn.com,DIRECT",
+    "DOMAIN,cc.embycc.link,DIRECT",
+    "DOMAIN-SUFFIX,carryz.net,DIRECT",
+    "DOMAIN-SUFFIX,jmsooo.com,日本节点",
+    "DOMAIN-SUFFIX,4gtv.tv,台湾节点",
+    "DOMAIN-SUFFIX,hinet.net,台湾节点",
+    "IP-CIDR,168.138.161.143/32,DIRECT",
     "RULE-SET,AD,广告拦截",
     "RULE-SET,AI,AI",
     "RULE-SET,Apple,苹果服务",
