@@ -380,6 +380,7 @@ function main(config) {
     "DOMAIN,cc.embycc.link,DIRECT",
     "DOMAIN-SUFFIX,carryz.net,DIRECT",
     "DOMAIN-SUFFIX,jmsooo.com,日本节点",
+    "DOMAIN-SUFFIX,jmsuper.com,日本节点",
     "DOMAIN-SUFFIX,4gtv.tv,台湾节点",
     "DOMAIN-SUFFIX,hinet.net,台湾节点",
     "IP-CIDR,168.138.161.143/32,DIRECT",
