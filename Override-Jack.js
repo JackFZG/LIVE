@@ -36,9 +36,6 @@ function main(config) {
   config["unified-delay"] = "true";
   config["find-process-mode"] = "strict";
   config["global-client-fingerprint"] = "chrome";
-  config["external-controller"] = "127.0.0.1:9090";
-  config["external-ui"] = "ui";
-  config["external-ui-url"] = "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip";
 
   // 覆盖 dns 配置
   config["dns"] = {
