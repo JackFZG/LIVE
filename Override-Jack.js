@@ -2,7 +2,7 @@
 //
 // Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 0.5.8)
 //
-// 最后更新时间: 2024-09-08 15:50
+// 最后更新时间: 2024-10-16 15:50
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -45,12 +45,7 @@ function main(config) {
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
     "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com"],
-    "default-nameserver": ["system"],
-    "nameserver": ["223.5.5.5", "119.29.29.29", "180.184.1.1"],
-    "nameserver-policy": {
-      "geosite:cn": "system",
-      "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]
-    }
+    "nameserver": ["223.5.5.5", "119.29.29.29"]
   };
 
   // 覆盖 geodata 配置
@@ -357,12 +352,6 @@ function main(config) {
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list",
       "path": "./rules/ProxyGFW.list"
-    },
-    "China": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list",
-      "path": "./rules/China.list"
     }
   };
 
@@ -401,7 +390,6 @@ function main(config) {
     "GEOSITE,github,微软服务",
     "GEOSITE,microsoft,微软服务",
     "GEOSITE,gfw,国外网站",
-    "RULE-SET,China,DIRECT",
     "GEOIP,lan,DIRECT",
     "GEOIP,CN,DIRECT",
     "MATCH,兜底分流"
