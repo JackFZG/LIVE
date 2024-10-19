@@ -131,6 +131,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "电报消息",
       "type": "select",
+      "include-all": true,
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
     },
@@ -373,7 +374,7 @@ function main(config) {
     "RULE-SET,AD,广告拦截",
     "RULE-SET,AI,AI",
     "RULE-SET,Apple,苹果服务",
-    "RULE-SET,YouTube,谷歌服务",
+    "RULE-SET,YouTube,国际媒体",
     "RULE-SET,Google,谷歌服务",
     "RULE-SET,Telegram,电报消息",
     "RULE-SET,Twitter,推特消息",
