@@ -13,7 +13,7 @@ DOMAIN-SUFFIX,vercel.app,proxy
 
 # > peach IP
 # DOMAIN-SUFFIX,peachmv.me,direct
-IP-CIDR,168.138.161.143/32,direct,no-resolve
+IP-CIDR,168.138.45.100/32,direct,no-resolve
 IP-CIDR,193.123.232.141/32,direct
 # IP-CIDR,208.87.242.13/32,direct,no-resolve
 
