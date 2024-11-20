@@ -45,7 +45,8 @@ function main(config) {
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
     "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com"],
-    "nameserver": ["223.5.5.5", "119.29.29.29"]
+    "nameserver": ["223.5.5.5", "119.29.29.29"],
+    "nameserver-policy": {"rule-set:AD": "rcode://success"}
   };
 
   // 覆盖 geodata 配置
@@ -90,7 +91,7 @@ function main(config) {
       "type": "select",
       "proxies": ["香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
       "include-all": true,
-      "icon": "https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png"
+      "icon": "https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png"
     },
     {
       ...groupBaseOption,
