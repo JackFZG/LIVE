@@ -36,4 +36,7 @@ DOMAIN-SUFFIX,hinet.net,台湾节点
 # > heisi
 DOMAIN-SUFFIX,i109.com,proxy
 
+# > aca
+DOMAIN-SUFFIX,acaisbest.com,proxy
+
 
