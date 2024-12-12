@@ -360,6 +360,7 @@ function main(config) {
   // 覆盖规则
   config["rules"] = [
     "DOMAIN-KEYWORD,pikpak,手动切换",
+    "DOMAIN-SUFFIX,acaisbest.com,手动切换",
     "DOMAIN-SUFFIX,jackfzg.top,手动切换",
     "DOMAIN-SUFFIX,vercel.app,手动切换",
     "DOMAIN-SUFFIX,i109.com,手动切换",
