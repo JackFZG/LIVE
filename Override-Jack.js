@@ -373,7 +373,6 @@ function main(config) {
     "DOMAIN-SUFFIX,4gtv.tv,台湾节点",
     "DOMAIN-SUFFIX,hinet.net,台湾节点",
     "IP-CIDR,168.138.45.100/32,DIRECT,no-resolve",
-    "IP-CIDR,95.161.76.100/31,REJECT,no-resolve",
     "RULE-SET,AD,广告拦截",
     "RULE-SET,AI,AI",
     "RULE-SET,Apple,苹果服务",
