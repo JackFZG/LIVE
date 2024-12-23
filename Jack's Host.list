@@ -1,15 +1,15 @@
 
 # > jackfzg
-DOMAIN-SUFFIX,jackfzg.top,proxy
+DOMAIN-SUFFIX,jackfzg.top,香港节点
 
 # > pikpak
-DOMAIN-KEYWORD,pikpak,proxy
+DOMAIN-KEYWORD,pikpak,香港节点
 
 # > replit
 # DOMAIN-SUFFIX,fzg262523.repl.co,direct
 
 # > yfamily
-DOMAIN-SUFFIX,vercel.app,proxy
+DOMAIN-SUFFIX,vercel.app,香港节点
 
 # > peach IP
 # DOMAIN-SUFFIX,peachmv.me,direct
@@ -34,9 +34,9 @@ DOMAIN-SUFFIX,4gtv.tv,台湾节点
 DOMAIN-SUFFIX,hinet.net,台湾节点
 
 # > heisi
-DOMAIN-SUFFIX,i109.com,proxy
+DOMAIN-SUFFIX,i109.com,香港节点
 
 # > aca
-DOMAIN-SUFFIX,acaisbest.com,proxy
+DOMAIN-SUFFIX,acaisbest.com,香港节点
 
 
