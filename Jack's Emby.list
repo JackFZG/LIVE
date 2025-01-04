@@ -34,7 +34,7 @@ DOMAIN,ru.odysseyplus.site
 
 # > 卷毛鼠
 # DOMAIN-SUFFIX,jmsooo.com
-DOMAIN-SUFFIX,jmsuper.com
+# DOMAIN-SUFFIX,jmsuper.com
 
 # > 终点站
 DOMAIN,pub1back.emby.wtf
