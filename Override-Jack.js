@@ -369,6 +369,7 @@ function main(config) {
     "DOMAIN,cc.embycc.link,DIRECT",
     "DOMAIN-SUFFIX,carryz.net,DIRECT",
     "DOMAIN-SUFFIX,emby.moe,DIRECT",
+    "DOMAIN-SUFFIX,loseremby.org,DIRECT",
     "IP-CIDR,154.12.52.149/32,DIRECT",
     "DOMAIN-SUFFIX,jmsooo.com,狮城节点",
     "DOMAIN-SUFFIX,jmsuper.com,狮城节点",
