@@ -368,6 +368,8 @@ function main(config) {
     "DOMAIN,cc.coemn.com,DIRECT",
     "DOMAIN,cc.embycc.link,DIRECT",
     "DOMAIN-SUFFIX,carryz.net,DIRECT",
+    "DOMAIN-SUFFIX,emby.moe,DIRECT",
+    "IP-CIDR,154.12.52.149/32,DIRECT",
     "DOMAIN-SUFFIX,jmsooo.com,狮城节点",
     "DOMAIN-SUFFIX,jmsuper.com,狮城节点",
     "DOMAIN-SUFFIX,4gtv.tv,台湾节点",
