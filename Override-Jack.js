@@ -368,6 +368,7 @@ function main(config) {
     "DOMAIN,cc.coemn.com,DIRECT",
     "DOMAIN,cc.embycc.link,DIRECT",
     "DOMAIN-SUFFIX,carryz.net,DIRECT",
+    "DOMAIN-SUFFIX,zox.show,DIRECT",
     "DOMAIN-SUFFIX,emby.moe,DIRECT",
     "DOMAIN-SUFFIX,loseremby.org,DIRECT",
     "IP-CIDR,154.12.52.149/32,DIRECT",
