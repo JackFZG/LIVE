@@ -33,6 +33,9 @@ DOMAIN,cc.coemn.com,direct
 DOMAIN,cc.embycc.link,direct
 DOMAIN-SUFFIX,carryz.net,direct
 
+# > 星云
+DOMAIN,cdn1.nebula-media.org,direct
+
 # > 卷毛鼠
 # DOMAIN-SUFFIX,jmsooo.com,狮城节点
 DOMAIN-SUFFIX,jmsuper.com,狮城节点
