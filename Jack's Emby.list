@@ -17,7 +17,7 @@ DOMAIN-SUFFIX,xmsl.org
 # DOMAIN-SUFFIX,loseremby.org
 
 # > 星云
-DOMAIN-SUFFIX,nebula-media.org
+DOMAIN,emby.nebula-media.org
 
 # > TreeDiagram
 DOMAIN-SUFFIX,123456.al
