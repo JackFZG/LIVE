@@ -366,6 +366,7 @@ function main(config) {
     "DOMAIN-SUFFIX,i109.com,手动切换",
     "DOMAIN-SUFFIX,mcjoker.xyz,DIRECT",
     "DOMAIN,cc.coemn.com,DIRECT",
+    "DOMAIN,cdn1.nebula-media.org,DIRECT",
     "DOMAIN,cc.embycc.link,DIRECT",
     "DOMAIN-SUFFIX,carryz.net,DIRECT",
     "DOMAIN-SUFFIX,zox.show,DIRECT",
