@@ -34,8 +34,8 @@ DOMAIN,cc.embycc.link,direct
 DOMAIN-SUFFIX,carryz.net,direct
 
 # > 星云
-DOMAIN,emby-cdn1.nebula-media.org,direct
-DOMAIN,cdn1.nebula-media.org,direct
+# DOMAIN,emby-cdn1.nebula-media.org,direct
+# DOMAIN,cdn1.nebula-media.org,direct
 
 # > 卷毛鼠
 # DOMAIN-SUFFIX,jmsooo.com,狮城节点
