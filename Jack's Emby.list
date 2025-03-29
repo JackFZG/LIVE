@@ -18,6 +18,8 @@ DOMAIN-SUFFIX,xmsl.org
 
 # > 星云
 DOMAIN,emby.nebula-media.org
+DOMAIN,emby-cdn1.nebula-media.org
+DOMAIN,cdn1.nebula-media.org
 
 # > TreeDiagram
 DOMAIN-SUFFIX,123456.al
