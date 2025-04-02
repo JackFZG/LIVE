@@ -27,7 +27,7 @@ IP-CIDR,154.12.52.149/32,direct
 DOMAIN-SUFFIX,zox.show,direct
 
 # > 叔服
-DOMAIN-SUFFIX,mcjoker.xyz,direct
+# DOMAIN-SUFFIX,mcjoker.xyz,direct
 
 # > Cc
 DOMAIN,cc.coemn.com,direct
