@@ -71,8 +71,8 @@ DOMAIN,porn.aca.best
 DOMAIN-SUFFIX,gfwemby.org
 
 # > Cc
-# DOMAIN,cc.coemn.com
-# DOMAIN-SUFFIX,carryz.net
+DOMAIN,cc.coemn.com
+DOMAIN-SUFFIX,carryz.net
 
 # > Nebula
 DOMAIN,direct.nebula-emby.com
