@@ -112,11 +112,11 @@ rules:
   - DOMAIN-SUFFIX,i109.com,手动切换
  # - DOMAIN-SUFFIX,mcjoker.xyz,DIRECT
   - DOMAIN-SUFFIX,embymv.link,DIRECT
-  - DOMAIN,cc.coemn.com,DIRECT
+ # - DOMAIN,cc.coemn.com,DIRECT
  # - DOMAIN,cdn1.nebula-media.org,DIRECT
  # - DOMAIN,emby-cdn1.nebula-media.org,DIRECT
-  - DOMAIN,cc.embycc.link,DIRECT
-  - DOMAIN-SUFFIX,carryz.net,DIRECT
+ # - DOMAIN,cc.embycc.link,DIRECT
+ # - DOMAIN-SUFFIX,carryz.net,DIRECT
   - DOMAIN-SUFFIX,zox.show,DIRECT
   - DOMAIN-SUFFIX,emby.moe,DIRECT
   - DOMAIN-SUFFIX,loseremby.org,DIRECT
