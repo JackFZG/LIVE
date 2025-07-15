@@ -26,7 +26,7 @@ IP-CIDR,209.141.61.153/32,direct
 
 # > Zox/AcEmby
 DOMAIN-SUFFIX,zox.show,direct
-
+DOMAIN,play.3767483.xyz,direct
 # > 叔服
 # DOMAIN-SUFFIX,mcjoker.xyz,direct
 
