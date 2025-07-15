@@ -27,13 +27,14 @@ IP-CIDR,209.141.61.153/32,direct
 # > Zox/AcEmby
 DOMAIN-SUFFIX,zox.show,direct
 DOMAIN,play.3767483.xyz,direct
+
 # > 叔服
 # DOMAIN-SUFFIX,mcjoker.xyz,direct
 
 # > Cc
-# DOMAIN,cc.coemn.com,direct
-# DOMAIN,cc.embycc.link,direct
-# DOMAIN-SUFFIX,carryz.net,direct
+DOMAIN,cc.coemn.com,direct
+DOMAIN,cc.embycc.link,direct
+DOMAIN-SUFFIX,carryz.net,direct
 
 # > 星云
 # DOMAIN,emby-cdn1.nebula-media.org,direct
