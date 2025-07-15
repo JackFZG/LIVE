@@ -1,4 +1,4 @@
-﻿# Author:https://github.com/Repcz
+# Author:https://github.com/Repcz
 # TG:https://t.me/QVQ_Channel
 #
 # 官方文档：https://wiki.metacubex.one/
@@ -112,15 +112,15 @@ rules:
   - DOMAIN-SUFFIX,i109.com,手动切换
  # - DOMAIN-SUFFIX,mcjoker.xyz,DIRECT
   - DOMAIN-SUFFIX,embymv.link,DIRECT
- # - DOMAIN,cc.coemn.com,DIRECT
+  - DOMAIN,cc.coemn.com,DIRECT
  # - DOMAIN,cdn1.nebula-media.org,DIRECT
  # - DOMAIN,emby-cdn1.nebula-media.org,DIRECT
- # - DOMAIN,cc.embycc.link,DIRECT
- # - DOMAIN-SUFFIX,carryz.net,DIRECT
+  - DOMAIN,cc.embycc.link,DIRECT
+  - DOMAIN-SUFFIX,carryz.net,DIRECT
   - DOMAIN-SUFFIX,zox.show,DIRECT
   - DOMAIN-SUFFIX,emby.moe,DIRECT
   - DOMAIN-SUFFIX,loseremby.org,DIRECT
-  - IP-CIDR,154.12.52.149/32,DIRECT
+  - IP-CIDR,209.141.61.153/32,DIRECT
   - DOMAIN-SUFFIX,jmsooo.com,狮城节点
   - DOMAIN-SUFFIX,jmsuper.com,狮城节点
   - DOMAIN-SUFFIX,4gtv.tv,台湾节点
