@@ -372,7 +372,7 @@ function main(config) {
     "DOMAIN-SUFFIX,zox.show,DIRECT",
     "DOMAIN-SUFFIX,emby.moe,DIRECT",
     "DOMAIN-SUFFIX,loseremby.org,DIRECT",
-    "IP-CIDR,154.12.52.149/32,DIRECT",
+    "IP-CIDR,209.141.61.153/32,DIRECT",
     "DOMAIN-SUFFIX,jmsooo.com,狮城节点",
     "DOMAIN-SUFFIX,jmsuper.com,狮城节点",
     "DOMAIN-SUFFIX,4gtv.tv,台湾节点",
