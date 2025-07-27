@@ -1,4 +1,3 @@
-
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://1.1.1.1/generate_204, interval: 1800, timeout: 5000}}
 proxy-providers:
   Subscribe:
