@@ -118,7 +118,7 @@ rules:
   - RULE-SET,YouTube,谷歌服务
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Telegram,电报消息
-# - PROCESS-NAME,Telegram,REJECT-DROP # For Telegram macOS
+ # - PROCESS-NAME,Telegram,REJECT-DROP # For Telegram macOS
   - RULE-SET,Twitter,推特消息
   - RULE-SET,Steam,游戏平台
   - RULE-SET,Epic,游戏平台
