@@ -35,7 +35,7 @@ tun:
         
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   enhanced-mode: fake-ip
   listen: :1053
   fake-ip-range: 198.18.0.1/16
@@ -97,7 +97,7 @@ rules:
   - DOMAIN-SUFFIX,vercel.app,手动切换
   - DOMAIN-SUFFIX,i109.com,手动切换
  # - DOMAIN-SUFFIX,mcjoker.xyz,DIRECT
-  - DOMAIN-SUFFIX,embymv.link,DIRECT
+ # - DOMAIN-SUFFIX,embymv.link,DIRECT
   - DOMAIN,cc.coemn.com,DIRECT
  # - DOMAIN,cdn1.nebula-media.org,DIRECT
  # - DOMAIN,emby-cdn1.nebula-media.org,DIRECT
