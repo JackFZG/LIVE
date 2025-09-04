@@ -2,6 +2,7 @@ p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://1.1
 proxy-providers:
   Subscribe:
     url: https://
+    <<: *p
   Subscribe2:
     url: https://
     <<: *p
