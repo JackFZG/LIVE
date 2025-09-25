@@ -5,9 +5,6 @@ DOMAIN-SUFFIX,jackfzg.top,direct
 # > pikpak
 DOMAIN-KEYWORD,pikpak,香港节点
 
-# > replit
-# DOMAIN-SUFFIX,fzg262523.repl.co,direct
-
 # > yfamily
 DOMAIN-SUFFIX,vercel.app,香港节点
 
@@ -48,10 +45,5 @@ DOMAIN-SUFFIX,carryz.net,direct
 DOMAIN-SUFFIX,4gtv.tv,台湾节点
 DOMAIN-SUFFIX,hinet.net,台湾节点
 
-# > heisi
-DOMAIN-SUFFIX,i109.com,香港节点
-
-# > aca
-DOMAIN-SUFFIX,acaisbest.com,香港节点
 
 
