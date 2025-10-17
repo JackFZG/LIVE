@@ -98,7 +98,7 @@ rule-providers:
   HBO: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/HBO.list}
   TikTok: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/TikTok.list}
   #CDN: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/CDN.list}
-  Proxy: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Proxy.list}
+  Proxy: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Proxy/Proxy.list}
   ChinaMax: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax.list}
 
 rules:
@@ -125,7 +125,7 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
-  - RULE-SET,Github,微软服务
+  - RULE-SET,Github,国外网站
   - RULE-SET,OneDrive,微软服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,YouTube,谷歌服务
