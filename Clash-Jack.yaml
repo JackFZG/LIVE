@@ -1,12 +1,12 @@
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://1.1.1.1/generate_204, interval: 1800, timeout: 5000}, filter: '^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'}
 proxy-providers:
   Ash: 
-    url: https://junnanliangnv.egfu.cn/tlralg/oahrettss/ecywtwcaaasr?token=39392f43b1568996ae7db0e2db289298
+    url: 
     <<: *p
     override: {additional-prefix: '[Ash] '}
 
   Fac:
-    url: https://neo.facal.one/api/v1/client/subscribe?token=b5f6a28bb7bf8293c94f98c2a4eacac1
+    url: 
     <<: *p
     override: {additional-prefix: '[Fac] '}    
     
