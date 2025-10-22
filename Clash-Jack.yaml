@@ -67,7 +67,7 @@ proxy-groups:
   - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
   - {name: Spotify, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png}
   - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
-  - {name: 香港节点, <<: *url-test, filter: "(?=.*(?i)(港|🇭🇰|HK|Hong|HKG))^(?!.*(低倍率|Exp|流媒体)).*$", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
+  - {name: 香港节点, <<: *url-test, filter: "(?=.*(?i)(港|🇭🇰|HK|Hong|HKG))^(?!.*(低倍率|Exp|流媒体|Home)).*$", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
   - {name: 美国节点, <<: *url-test, filter: "(?=.*(?i)(美|🇺🇸|US|USA|SJC|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))^(?!.*(低倍率|Exp|流媒体)).*$", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
   - {name: 狮城节点, <<: *url-test, filter: "(?=.*(?i)(坡|狮|🇸🇬|SG|Sing|SIN|XSP))^(?!.*(低倍率|TG|流媒体)).*$", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
   - {name: 日本节点, <<: *url-test, filter: "(?=.*(?i)(日|东京|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK))^(?!.*(低倍率|流媒体)).*$", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
