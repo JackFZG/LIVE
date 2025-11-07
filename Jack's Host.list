@@ -19,6 +19,7 @@ IP-CIDR,193.123.232.141/32,direct
 DOMAIN-SUFFIX,emby.moe,direct
 # DOMAIN-SUFFIX,xxlb.net,direct
 DOMAIN-SUFFIX,loseremby.org,direct
+DOMAIN-KEYWORD,loseremby,direct
 IP-CIDR,209.141.61.153/32,direct
 
 # > Zox/AcEmby
