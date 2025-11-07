@@ -117,7 +117,7 @@ rules:
   - DOMAIN-SUFFIX,carryz.net,DIRECT
   - DOMAIN-SUFFIX,zox.show,DIRECT
   - DOMAIN-SUFFIX,emby.moe,DIRECT
-  - DOMAIN-SUFFIX,loseremby.org,DIRECT
+  - DOMAIN-KEYWORD,loseremby,DIRECT
   - IP-CIDR,209.141.61.153/32,DIRECT
  # - DOMAIN-SUFFIX,jmsooo.com,狮城节点
  # - DOMAIN-SUFFIX,jmsuper.com,狮城节点
