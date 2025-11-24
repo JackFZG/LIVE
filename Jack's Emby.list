@@ -1,37 +1,17 @@
-
-# > Singularity
-# DOMAIN,singularity.deja-vu.beauty
-
-# > 野兽餐厅
-DOMAIN-SUFFIX,mius.uk
-
-# > 探花tv
-DOMAIN-SUFFIX,tanhuatv.site
-
 # > 叔服
 DOMAIN-SUFFIX,mcjoker.xyz
 
 #> 1111
 DOMAIN-SUFFIX,xmsl.org
 # DOMAIN-SUFFIX,emby.moe
-# DOMAIN-SUFFIX,loseremby.org
+# DOMAIN-SUFFIX,xxlb.net
+# DOMAIN-KEYWORD,loseremby
+# IP-CIDR,209.141.61.153/32
 
 # > 星云
 DOMAIN,emby.nebula-media.org
 DOMAIN,emby-cdn1.nebula-media.org
 DOMAIN,cdn1.nebula-media.org
-
-# > TreeDiagram
-DOMAIN-SUFFIX,123456.al
-
-# > pornemby
-DOMAIN,pornemby.club
-
-# > Odyssey
-DOMAIN,cf.odysseyplus.site
-DOMAIN,agahk.odysseyplus.site
-DOMAIN,agasg.odysseyplus.site
-DOMAIN,ru.odysseyplus.site
 
 # > 卷毛鼠
 DOMAIN-SUFFIX,jmsooo.com
@@ -48,71 +28,31 @@ DOMAIN,pub1.term.wtf
 DOMAIN,pub2.term.wtf
 DOMAIN,pub3.term.wtf
 
-# > 熊猫
-DOMAIN,embyclub.com
-DOMAIN,az-hk.embyclub.com
-DOMAIN,azsgp.embyclub.com
-
-# > 卡戎
-DOMAIN,play.charontv.com
-
 # > polo
 DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,pololine.ml
 
-# > MisakaF
-DOMAIN-SUFFIX,misakaf.org
-
-# > ACA机场服
-DOMAIN,emby.aca.best
-DOMAIN,porn.aca.best
-
-# > GfwEmby
-DOMAIN-SUFFIX,gfwemby.org
-
 # > Cc
 # DOMAIN,cc.coemn.com
+# DOMAIN,cc.embycc.link
 # DOMAIN-SUFFIX,carryz.net
-
-# > Nebula
-DOMAIN,direct.nebula-emby.com
-
-# > Misty
-DOMAIN-SUFFIX,misty.ltd
 
 # > 纸片人
 DOMAIN-SUFFIX,embyplus.org
 DOMAIN,hyonix.embyplus.org
 DOMAIN,gd.9521732.xyz
 
-# > emby hub
-DOMAIN-SUFFIX,ednovas.org
-
 # > Paul
 DOMAIN-SUFFIX,imetyou.top
-
-# > NMEmby
-DOMAIN-SUFFIX,ohhhh.org
-
-# > hxd emby
-DOMAIN-SUFFIX,bili.rip
-
-# > 星光
-DOMAIN,free.emby.eu.org
 
 # > peach
 # DOMAIN-SUFFIX,embymv.link
 # DOMAIN-SUFFIX,embymv.tk
-# IP-CIDR,168.138.161.143/32,no-resolve
+# IP-CIDR,168.138.45.100/32
+# IP-CIDR,193.123.232.141/32
+# IP-CIDR,208.87.242.13/32
 
-# > infinityfly
-DOMAIN-SUFFIX,infinityfly.top
-
-# > 江湖 emby
-DOMAIN-SUFFIX,reddust.link
 
 # > Zox/AcEmby
-# DOMAIN-SUFFIX,zox.show
-
-# > heisi
-# DOMAIN-SUFFIX,i109.com
+DOMAIN-SUFFIX,zox.show
+DOMAIN,play.3767483.xyz
