@@ -11,6 +11,9 @@ DOMAIN-SUFFIX,vercel.app,香港节点
 # > 二刺螈
 DOMAIN,default.cdn.bgp.yt,direct
 
+# > UHD
+DOMAIN,v1.uhdnow.com,direct
+
 # > peach IP
 # DOMAIN-SUFFIX,embymv.link,direct
 # DOMAIN-SUFFIX,embymv.tk,direct
