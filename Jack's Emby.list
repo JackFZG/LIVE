@@ -2,7 +2,7 @@
 DOMAIN-SUFFIX,mcjoker.xyz
 
 # > UHD
-# DOMAIN,v1.uhdnow.com
+DOMAIN,v1.uhdnow.com
 
 #> 1111
 DOMAIN-SUFFIX,xmsl.org
@@ -36,9 +36,9 @@ DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,pololine.ml
 
 # > Cc
-# DOMAIN,cc.coemn.com
-# DOMAIN,cc.embycc.link
-# DOMAIN-SUFFIX,carryz.net
+DOMAIN,cc.coemn.com
+DOMAIN,cc.embycc.link
+DOMAIN-SUFFIX,carryz.net
 
 # > 纸片人
 DOMAIN-SUFFIX,embyplus.org
