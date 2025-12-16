@@ -355,7 +355,7 @@ function main(config) {
   config["rules"] = [
     "DOMAIN-KEYWORD,pikpak,手动切换",
     "DOMAIN-SUFFIX,acaisbest.com,手动切换",
-    "DOMAIN-SUFFIX,jackfzg.top,手动切换",
+    "DOMAIN-SUFFIX,jackfzg.top,DIRECT",
     "DOMAIN-SUFFIX,vercel.app,手动切换",
     "DOMAIN-SUFFIX,blip.net,DIRECT",
     // "DOMAIN-SUFFIX,mcjoker.xyz,DIRECT",
