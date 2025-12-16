@@ -108,13 +108,6 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "苹果服务",
-      "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png"
-    },
-    {
-      ...groupBaseOption,
       "name": "微软服务",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
@@ -401,7 +394,7 @@ function main(config) {
     "RULE-SET,Proxy,国外网站",
     "RULE-SET,ChinaMax,DIRECT",
     "RULE-SET,AppleCN,DIRECT",
-    "RULE-SET,AppleProxy,苹果服务",
+    "RULE-SET,AppleProxy,香港节点",
     "RULE-SET,Lan,DIRECT",
     "GEOIP,CN,DIRECT",
     "MATCH,兜底分流"
