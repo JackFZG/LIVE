@@ -31,7 +31,7 @@ function main(config) {
   config["mixed-port"] = "7890";
   config["tcp-concurrent"] = true;
   config["allow-lan"] = true;
-  config["ipv6"] = false;
+  config["ipv6"] = true;
   config["log-level"] = "info";
   config["unified-delay"] = "true";
   config["find-process-mode"] = "strict";
@@ -41,21 +41,20 @@ function main(config) {
   config["dns"] = {
     "enable": true,
     "listen": "0.0.0.0:1053",
-    "ipv6": false,
+    "ipv6": true,
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
-    "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com"],
+    "fake-ip-filter": ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn', '+.msftconnecttest.com', '+.msftncsi.com', 'lancache.steamcontent.com'],
     "nameserver": ["223.5.5.5", "119.29.29.29"],
-    "nameserver-policy": {"rule-set:AD": "rcode://success"}
   };
 
   // 覆盖 geodata 配置
   config["geodata-mode"] = true;
   config["geox-url"] = {
-    "geoip": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat",
-    "geosite": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat",
-    "mmdb": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb",
-    "asn": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb"
+    "geoip": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat",
+    "geosite": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat",
+    "mmdb": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb",
+    "asn": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb"
   };
 
   // 覆盖 sniffer 配置
@@ -125,6 +124,8 @@ function main(config) {
       ...groupBaseOption,
       "name": "谷歌服务",
       "type": "select",
+      "include-all": true,
+      "filter": "(?=.*(?i)(港|🇭🇰|HK|Hong|HKG))^(?!.*(低倍率|Exp|流媒体|Home)).*$",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png"
     },
@@ -132,7 +133,6 @@ function main(config) {
       ...groupBaseOption,
       "name": "电报消息",
       "type": "select",
-      "include-all": true,
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
     },
@@ -162,15 +162,17 @@ function main(config) {
       "name": "Emby",
       "type": "select",
       "include-all": true,
+      "filter": "(?=.*(?i)(坡|狮|🇸🇬|SG|Sing|SIN|XSP))^(?!.*(TG|流媒体)).*$"
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png"
     },
     {
       ...groupBaseOption,
-      "name": "广告拦截",
+      "name": "Spotify",
       "type": "select",
-      "proxies": ["REJECT", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png"
+      "include-all": true,
+      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png"
     },
     {
       ...groupBaseOption,
@@ -186,7 +188,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇭🇰|香港|(\b(HK|Hong)\b)",
+      "filter": "(?=.*(?i)(港|🇭🇰|HK|Hong|HKG))^(?!.*(低倍率|Exp|流媒体|Home)).*$",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
     },
     {
@@ -195,7 +197,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)",
+      "filter": "(?=.*(?i)(美|🇺🇸|US|USA|SJC|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))^(?!.*(低倍率|Exp|流媒体)).*$",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
     },
     {
@@ -204,7 +206,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)",
+      "filter": "(?=.*(?i)(坡|狮|🇸🇬|SG|Sing|SIN|XSP))^(?!.*(低倍率|TG|流媒体)).*$",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"
     },
     {
@@ -213,7 +215,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)",
+      "filter": "(?=.*(?i)(日|东京|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK))^(?!.*(低倍率|流媒体)).*$",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
     },
     {
@@ -222,183 +224,185 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)",
+      "filter": "(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH))^(?!.*(低倍率|流媒体)).*$",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
     }
   ];
 
   // 覆盖规则集
   config["rule-providers"] = {
-    "AD": {
+    "Direct": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list",
-      "path": "./rules/AD.list"
-    },
-    "Apple": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list",
-      "path": "./rules/Apple.list"
-    },
-    "Google": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list",
-      "path": "./rules/Google.list"
-    },
-    "YouTube": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list",
-      "path": "./rules/YouTube.list"
-    },
-    "Telegram": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list",
-      "path": "./rules/Telegram.list"
-    },
-    "Twitter": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list",
-      "path": "./rules/Twitter.list"
-    },
-    "Steam": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list",
-      "path": "./rules/Steam.list"
-    },
-    "Epic": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list",
-      "path": "./rules/Epic.list"
-    },
-    "AI": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list",
-      "path": "./rules/AI.list"
-    },
-    "Emby": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/JackFZG/LIVE/raw/main/Jack's%20Emby.list",
-      "path": "./rules/Emby.list"
-    },
-    "Spotify": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Spotify.list",
-      "path": "./rules/Spotify.list"
-    },
-    "Bahamut": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bahamut.list",
-      "path": "./rules/Bahamut.list"
-    },
-    "Netflix": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Netflix.list",
-      "path": "./rules/Netflix.list"
-    },
-    "Disney": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Disney.list",
-      "path": "./rules/Disney.list"
-    },
-    "PrimeVideo": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/PrimeVideo.list",
-      "path": "./rules/PrimeVideo.list"
-    },
-    "HBO": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list",
-      "path": "./rules/HBO.list"
-    },
-    "OneDrive": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list",
-      "path": "./rules/OneDrive.list"
-    },
-    "Github": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list",
-      "path": "./rules/Github.list"
-    },
-    "Microsoft": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list",
-      "path": "./rules/Microsoft.list"
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Direct/Direct.list"
     },
     "Lan": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list",
-      "path": "./rules/Lan.list"
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Lan.list"
     },
-    "ProxyGFW": {
+    "Reject": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list",
-      "path": "./rules/ProxyGFW.list"
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Reject.list"
+    },
+    "AppleCN": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AppleCN.list"
+    },
+    "AppleProxy": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AppleServers.list"
+    },
+    "Microsoft": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Microsoft.list"
+    },
+    "OneDrive": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/OneDrive.list"
+    },
+    "Github": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Github.list"
+    },
+    "YouTube": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/YouTube.list"
+    },
+    "Google": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Google.list"
+    },
+    "Twitter": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Twitter.list"
+    },
+    "Telegram": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Telegram.list"
+    },
+    "Steam": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Steam.list"
+    },
+    "Epic": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Epic.list"
+    },
+    "AI": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AI.list"
+    },
+    "Emby": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/JackFZG/LIVE/raw/main/Jack's%20Emby.list"
+    },
+    "Spotify": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Spotify.list"
+    },
+    "Bahamut": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Bahamut.list"
+    },
+    "Netflix": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Netflix.list"
+    },
+    "Disney": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Disney.list"
+    },
+    "PrimeVideo": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/PrimeVideo.list"
+    },
+    "HBO": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/HBO.list"
+    },
+    "TikTok": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/TikTok.list"
+    },
+    "Proxy": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Proxy/Proxy.list"
+    },
+    "ChinaMax": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax.list"
     }
   };
-
+  
   // 覆盖规则
   config["rules"] = [
     "DOMAIN-KEYWORD,pikpak,手动切换",
     "DOMAIN-SUFFIX,acaisbest.com,手动切换",
     "DOMAIN-SUFFIX,jackfzg.top,手动切换",
     "DOMAIN-SUFFIX,vercel.app,手动切换",
-    "DOMAIN-SUFFIX,i109.com,手动切换",
-    "DOMAIN-SUFFIX,mcjoker.xyz,DIRECT",
-    "DOMAIN,cc.coemn.com,DIRECT",
+    "DOMAIN-SUFFIX,blip.net,DIRECT",
+    # "DOMAIN-SUFFIX,mcjoker.xyz,DIRECT",
+    # "DOMAIN,cc.coemn.com,DIRECT",
     # "DOMAIN,cdn1.nebula-media.org,DIRECT",
-    "DOMAIN,cc.embycc.link,DIRECT",
-    "DOMAIN-SUFFIX,carryz.net,DIRECT",
-    "DOMAIN-SUFFIX,zox.show,DIRECT",
+    # "DOMAIN,cc.embycc.link,DIRECT",
+    # "DOMAIN-SUFFIX,carryz.net,DIRECT",
     "DOMAIN-SUFFIX,emby.moe,DIRECT",
     "DOMAIN-SUFFIX,loseremby.org,DIRECT",
     "IP-CIDR,209.141.61.153/32,DIRECT",
-    "DOMAIN-SUFFIX,jmsooo.com,狮城节点",
-    "DOMAIN-SUFFIX,jmsuper.com,狮城节点",
+    # "DOMAIN-SUFFIX,jmsooo.com,狮城节点",
+    # "DOMAIN-SUFFIX,jmsuper.com,狮城节点",
     "DOMAIN-SUFFIX,4gtv.tv,台湾节点",
     "DOMAIN-SUFFIX,hinet.net,台湾节点",
-    "IP-CIDR,168.138.45.100/32,DIRECT,no-resolve",
-    "RULE-SET,AD,广告拦截",
+    
+    "RULE-SET,Direct,DIRECT",
+    "RULE-SET,Reject,REJECT",
     "RULE-SET,AI,AI",
-    "RULE-SET,Apple,苹果服务",
-    "RULE-SET,YouTube,国际媒体",
+    "RULE-SET,Github,国外网站",
+    "RULE-SET,OneDrive,微软服务",
+    "RULE-SET,Microsoft,微软服务",
+    "RULE-SET,YouTube,谷歌服务",
     "RULE-SET,Google,谷歌服务",
-    "RULE-SET,Telegram,电报消息",
     "RULE-SET,Twitter,推特消息",
+    "RULE-SET,Telegram,电报消息",
     "RULE-SET,Steam,游戏平台",
     "RULE-SET,Epic,游戏平台",
     "RULE-SET,Emby,Emby",
-    "RULE-SET,Spotify,国际媒体",
     "RULE-SET,Bahamut,国际媒体",
     "RULE-SET,Netflix,国际媒体",
     "RULE-SET,Disney,国际媒体",
     "RULE-SET,PrimeVideo,国际媒体",
     "RULE-SET,HBO,国际媒体",
-    "GEOSITE,onedrive,微软服务",
-    "GEOSITE,github,微软服务",
-    "GEOSITE,microsoft,微软服务",
-    "GEOSITE,gfw,国外网站",
-    "GEOIP,lan,DIRECT",
+    "RULE-SET,TikTok,国际媒体",
+    "RULE-SET,Spotify,Spotify",
+    "RULE-SET,Proxy,国外网站",
+    "RULE-SET,ChinaMax,DIRECT",
+    "RULE-SET,AppleCN,DIRECT",
+    "RULE-SET,AppleProxy,香港节点",
+    "RULE-SET,Lan,DIRECT",
     "GEOIP,CN,DIRECT",
     "MATCH,兜底分流"
   ];
