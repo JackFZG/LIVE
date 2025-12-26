@@ -100,34 +100,12 @@ rule-providers:
   #CDN: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/CDN.list}
   Proxy: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Proxy/Proxy.list}
   ChinaMax: {<<: *c, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax.list}
+  JackP: {<<: *c, url: https://github.com/JackFZG/LIVE/raw/main/Jack's%20Proxy.list}
+  JackD: {<<: *c, url: https://github.com/JackFZG/LIVE/raw/main/Jack's%20Direct.list}
 
 rules:
-  - DOMAIN-KEYWORD,pikpak,手动切换
-  - DOMAIN-SUFFIX,acaisbest.com,手动切换
-  - DOMAIN-SUFFIX,jackfzg.top,DIRECT
-  - DOMAIN-SUFFIX,blip.net,DIRECT
-  - DOMAIN-SUFFIX,vercel.app,手动切换
-  - DOMAIN-SUFFIX,qpyou.cn,手动切换
- # - DOMAIN-SUFFIX,mcjoker.xyz,DIRECT
- # - DOMAIN-SUFFIX,embymv.link,DIRECT
- # - IP-CIDR,168.138.45.100/32,DIRECT,no-resolve
- # - DOMAIN,cc.coemn.com,DIRECT
- # - DOMAIN,cdn1.nebula-media.org,DIRECT
- # - DOMAIN,emby-cdn1.nebula-media.org,DIRECT
- # - DOMAIN,cc.embycc.link,DIRECT
- # - DOMAIN-SUFFIX,carryz.net,DIRECT
-  - DOMAIN-SUFFIX,zox.show,DIRECT
-  - DOMAIN-SUFFIX,emby.moe,DIRECT
-  - DOMAIN-KEYWORD,loseremby,DIRECT
-  - IP-CIDR,209.141.61.153/32,DIRECT
-  - IP-CIDR,154.12.52.149/32,DIRECT
-  - DOMAIN,default.cdn.bgp.yt,DIRECT
- # - DOMAIN,v1.uhdnow.com,DIRECT
- # - DOMAIN-SUFFIX,jmsooo.com,狮城节点
- # - DOMAIN-SUFFIX,jmsuper.com,狮城节点
-  - DOMAIN-SUFFIX,4gtv.tv,台湾节点
-  - DOMAIN-SUFFIX,hinet.net,台湾节点
-
+  - RULE-SET,JackD,DIRECT
+  - RULE-SET,JackP,手动切换
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
@@ -156,4 +134,3 @@ rules:
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
-
