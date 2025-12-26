@@ -10,7 +10,7 @@ proxy-providers:
     <<: *p
     override: {additional-prefix: '[Fac] '}    
     
-  
+
 mixed-port: 7893
 tcp-concurrent: true
 allow-lan: true
@@ -107,7 +107,7 @@ rules:
   - DOMAIN-SUFFIX,jackfzg.top,DIRECT
   - DOMAIN-SUFFIX,blip.net,DIRECT
   - DOMAIN-SUFFIX,vercel.app,手动切换
-  - DOMAIN-SUFFIX,i109.com,手动切换
+  - DOMAIN-SUFFIX,qpyou.cn,手动切换
  # - DOMAIN-SUFFIX,mcjoker.xyz,DIRECT
  # - DOMAIN-SUFFIX,embymv.link,DIRECT
  # - IP-CIDR,168.138.45.100/32,DIRECT,no-resolve
