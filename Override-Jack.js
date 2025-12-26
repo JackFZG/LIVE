@@ -155,7 +155,7 @@ function main(config) {
       "name": "Emby",
       "type": "select",
       "include-all": true,
-      "filter": "(?=.*(?i)(坡|狮|🇸🇬|SG|Sing|SIN|XSP))^(?!.*(TG|流媒体)).*$",
+      "filter": "(?=.*(?i)(坡|狮|🇸🇬|SG|Sing|SIN|XSP|V1))^(?!.*(TG|流媒体)).*$",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png"
     },
@@ -348,30 +348,23 @@ function main(config) {
       ...ruleProviderCommon,
       "behavior": "classical",
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/ChinaMax/ChinaMax.list"
+    },
+    "JackP": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/JackFZG/LIVE/raw/main/Jack's%20Proxy.list"
+    },
+    "JackD": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/JackFZG/LIVE/raw/main/Jack's%20Direct.list"
     }
   };
   
   // 覆盖规则
   config["rules"] = [
-    "DOMAIN-KEYWORD,pikpak,手动切换",
-    "DOMAIN-SUFFIX,acaisbest.com,手动切换",
-    "DOMAIN-SUFFIX,jackfzg.top,DIRECT",
-    "DOMAIN-SUFFIX,vercel.app,手动切换",
-    "DOMAIN-SUFFIX,blip.net,DIRECT",
-    // "DOMAIN-SUFFIX,mcjoker.xyz,DIRECT",
-    // "DOMAIN,cc.coemn.com,DIRECT",
-    // "DOMAIN,cdn1.nebula-media.org,DIRECT",
-    // "DOMAIN,cc.embycc.link,DIRECT",
-    // "DOMAIN-SUFFIX,carryz.net,DIRECT",
-    "DOMAIN-SUFFIX,emby.moe,DIRECT",
-    "DOMAIN-SUFFIX,loseremby.org,DIRECT",
-    "IP-CIDR,209.141.61.153/32,DIRECT",
-    "IP-CIDR,154.12.52.149/32,DIRECT",
-    // "DOMAIN-SUFFIX,jmsooo.com,狮城节点",
-    // "DOMAIN-SUFFIX,jmsuper.com,狮城节点",
-    "DOMAIN-SUFFIX,4gtv.tv,台湾节点",
-    "DOMAIN-SUFFIX,hinet.net,台湾节点",
-    
+    "RULE-SET,JackD,DIRECT",
+    "RULE-SET,JackP,手动切换",
     "RULE-SET,Direct,DIRECT",
     "RULE-SET,Reject,REJECT",
     "RULE-SET,AI,AI",
