@@ -1,0 +1,42 @@
+
+# > jackfzg
+DOMAIN-SUFFIX,jackfzg.top
+
+# > Blip
+DOMAIN-SUFFIX,blip.net
+
+# > 二刺螈
+DOMAIN,default.cdn.bgp.yt
+
+# > UHD
+# DOMAIN,v1.uhdnow.com
+
+# > peach IP
+# DOMAIN-SUFFIX,embymv.link
+# DOMAIN-SUFFIX,embymv.tk
+# IP-CIDR,168.138.45.100/32,no-resolve
+# IP-CIDR,193.123.232.141/32,
+# IP-CIDR,208.87.242.13/32,no-resolve
+
+# > 垃圾影音
+DOMAIN-SUFFIX,emby.moe
+# DOMAIN-SUFFIX,xxlb.net
+# DOMAIN-SUFFIX,loseremby.org
+DOMAIN-KEYWORD,loseremby
+IP-CIDR,209.141.61.153/32
+IP-CIDR,154.12.52.149/32
+
+# > 叔服
+# DOMAIN-SUFFIX,mcjoker.xyz
+
+# > Cc
+# DOMAIN,cc.coemn.com
+# DOMAIN,cc.embycc.link
+# DOMAIN-SUFFIX,carryz.net
+
+# > 星云
+# DOMAIN,emby-cdn1.nebula-media.org
+# DOMAIN,cdn1.nebula-media.org
+
+
+
