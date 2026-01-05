@@ -1,17 +1,17 @@
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://1.1.1.1/generate_204, interval: 1800, timeout: 5000}, filter: '^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'}
 proxy-providers:
   Fac:
-    url: https://fm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run/system/info/check?token=32a219b2b4e3fe08ced3278142a5a371
+    url: 
     <<: *p
     override: {additional-prefix: '[Fac] '}    
     
   Qsy:
-    url: https://jdahaiwrhjsdjai.qingsi.website/subdyojbk1/2269fdcb36a3f244b43d018cc56b90a4
+    url: 
     <<: *p
     override: {additional-prefix: '[Qsy] '} 
     
   Kls:
-    url: http://162.19.79.201/s/2fe833dce852d3e817cfb1e9743bd941
+    url: 
     <<: *p
     override: {additional-prefix: '[Kls] '}    
     
