@@ -10,12 +10,12 @@ DOMAIN,default.cdn.bgp.yt
 # > UHD
 # DOMAIN,v1.uhdnow.com
 
-# > peach IP
-# DOMAIN-SUFFIX,embymv.link
-# DOMAIN-SUFFIX,embymv.tk
-# IP-CIDR,168.138.45.100/32,no-resolve
-# IP-CIDR,193.123.232.141/32,
-# IP-CIDR,208.87.242.13/32,no-resolve
+# > peach
+DOMAIN-SUFFIX,embymv.link
+DOMAIN-SUFFIX,embymv.tk
+IP-CIDR,168.138.45.100/32,no-resolve
+IP-CIDR,193.123.232.141/32,
+IP-CIDR,208.87.242.13/32,no-resolve
 
 # > 垃圾影音
 DOMAIN-SUFFIX,emby.moe
