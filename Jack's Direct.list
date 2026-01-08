@@ -14,7 +14,7 @@ DOMAIN,default.cdn.bgp.yt
 DOMAIN-SUFFIX,embymv.link
 DOMAIN-SUFFIX,embymv.tk
 IP-CIDR,168.138.45.100/32,no-resolve
-IP-CIDR,193.123.232.141/32,
+IP-CIDR,193.123.232.141/32,no-resolve
 IP-CIDR,208.87.242.13/32,no-resolve
 
 # > 垃圾影音
