@@ -16,7 +16,11 @@ proxy-providers:
     override: {additional-prefix: '[Kls] '}    
     
 
+port: 7890
+socks-port: 7891
+redir-port: 7892
 mixed-port: 7893
+tproxy-port: 7895
 tcp-concurrent: true
 allow-lan: true
 ipv6: true
@@ -38,16 +42,27 @@ sniffer: { enable: true, sniff: { HTTP: { ports: [80], override-destination: tru
 tun:
   enable: true
   stack: mixed
-  dns-hijack: [any:53]
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+    - tcp://any:53
         
 dns:
   enable: true
   ipv6: true
   enhanced-mode: fake-ip
-  listen: :1053
+  listen: 0.0.0.0:1053
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn', '+.msftconnecttest.com', '+.msftncsi.com', 'lancache.steamcontent.com']
-  nameserver: [223.5.5.5, 119.29.29.29]
+  default-nameserver:
+    - 119.29.29.29
+    - 180.184.1.1
+    - 223.5.5.5
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 
 # 锚点参数
 pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
