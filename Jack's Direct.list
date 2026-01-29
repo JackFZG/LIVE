@@ -19,7 +19,7 @@ DOMAIN,default.cdn.bgp.yt
 
 # > 垃圾影音
 DOMAIN-SUFFIX,emby.moe
-DOMAIN-SUFFIX,xxlb.net
+# DOMAIN-SUFFIX,xxlb.net
 # DOMAIN-SUFFIX,loseremby.org
 DOMAIN-KEYWORD,loseremby
 IP-CIDR,209.141.61.153/32
