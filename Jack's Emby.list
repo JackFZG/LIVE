@@ -7,7 +7,7 @@ DOMAIN,v1.uhdnow.com
 #> 1111
 DOMAIN-SUFFIX,xmsl.org
 # DOMAIN-SUFFIX,emby.moe
-# DOMAIN-SUFFIX,xxlb.net
+DOMAIN-SUFFIX,xxlb.net
 # DOMAIN-KEYWORD,loseremby
 # IP-CIDR,209.141.61.153/32
 # IP-CIDR,154.12.52.149/32
