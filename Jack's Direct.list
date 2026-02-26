@@ -5,7 +5,7 @@ DOMAIN-SUFFIX,jackfzg.top
 DOMAIN-SUFFIX,blip.net
 
 # > 二刺螈
-DOMAIN,default.cdn.bgp.yt
+DOMAIN-SUFFIX,cdn.bgp.yt
 
 # > UHD
 # DOMAIN,v1.uhdnow.com
