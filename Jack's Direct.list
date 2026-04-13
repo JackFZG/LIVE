@@ -8,7 +8,7 @@ DOMAIN-SUFFIX,blip.net
 DOMAIN-SUFFIX,cdn.bgp.yt
 
 # > 终点站
-DOMAIN-SUFFIX,emby.wtf
+# DOMAIN-SUFFIX,emby.wtf
 
 # > UHD
 # DOMAIN,v1.uhdnow.com
